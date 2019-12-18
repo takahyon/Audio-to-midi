@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import argparse
-import tqdm
+from tqdm import tqdm
 
 def smoothing(roll):
 #     step1  Turn consecutively pitch labels into notes.
