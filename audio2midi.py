@@ -6,6 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import argparse
+import tqdm
 
 def smoothing(roll):
 #     step1  Turn consecutively pitch labels into notes.
@@ -295,7 +296,7 @@ if __name__ == '__main__':
     print('------------')
 
     for root, dirr, file in os.walk(input_folder):
-        for filename in file:
+        for filename in tqdm(file):
             if '.wav' in filename:
                 songname = filename.split('.wav')[0]
                 fp = os.path.join(root, filename)
