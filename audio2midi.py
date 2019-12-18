@@ -303,5 +303,8 @@ if __name__ == '__main__':
                 mp = './model/model_'+melody_type
                 op = output_folder + songname
                 print ('Songname: '+songname)
-                main(fp, mp, op)
+                if os.path.exists(op+".mid"):
+                    pass
+                if not os.path.exists(op+".mid"):
+                    main(fp, mp, op)
                 
