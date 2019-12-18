@@ -283,9 +283,9 @@ if __name__ == '__main__':
     input_folder = parameters['input_folder']
     output_folder = parameters['output_folder']
     if parameters['main_melody']:
-        melody_type = 'Melody'
+        melody_type = 'melody'
     else:
-        melody_type = 'Vocal'
+        melody_type = 'vocal'
 
     print('Audio to midi : Update in 20190503')
     print('------------')
